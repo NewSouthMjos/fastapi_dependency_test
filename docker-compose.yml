@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+    fastapi_dependency:
+        build: .
+        container_name: fastapi_dependency
+        ports: 
+            - 5600:5600
