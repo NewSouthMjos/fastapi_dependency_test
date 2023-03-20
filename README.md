@@ -1,6 +1,10 @@
 ## FastAPI dependency possible bug
 
 
+## UPDATE:
+
+Problem solved on python 3.11.2
+
 If dependency function uses `yield`, injecting dependency with sync def function (`get_something_sync`), the error traceback will broke - it doesn't locate the place where it was rise (should be "/app/main.py", line 24):
 
 ```
